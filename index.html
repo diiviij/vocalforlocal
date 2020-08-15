@@ -36,8 +36,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <a class="navbar-brand" href="/"><img class="brandLogo" src="" alt="My image"></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -85,23 +84,21 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">×</span>
                 </button>
             </div>
 
             <div class="modal-body">
-                <form action="/profile/login" method='post'><input type="hidden" name="csrfmiddlewaretoken" value="MkIAjjHdtRtaGKawTWM0cV2zIuk8Vma2lhRWMOON4j5bZ9bcCnFAi5AYauP6Nc4Y">
+                <form action="/profile/login" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MkIAjjHdtRtaGKawTWM0cV2zIuk8Vma2lhRWMOON4j5bZ9bcCnFAi5AYauP6Nc4Y">
                     <div class="form-group">
                         <label for="lusername">Username</label>
-                        <input type="name" class="form-control" id="luname" placeholder="Enter your username"
-                            name="uname">
+                        <input type="name" class="form-control" id="luname" placeholder="Enter your username" name="uname">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="lpassword" placeholder="Enter your password"
-                            name="password">
+                        <input type="password" class="form-control" id="lpassword" placeholder="Enter your password" name="password">
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                    <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m&amp;co=aHR0cHM6Ly9kaWl2aWlqLmdpdGh1Yi5pbzo0NDM.&amp;hl=en&amp;v=TPiWapjoyMdQOtxLT9_b4n2W&amp;size=normal&amp;cb=7lq7wfz6ns4p" role="presentation" name="a-extnlzefdj3v" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
                     <input type="hidden" name="path" value="/">
 
                     <button type="submit" class="btn btn-danger mt-2" id="loginsubmit">Login</button>
@@ -122,7 +119,7 @@
       <div class="modal-header">
         <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">×</span>
         </button>
       </div>
 
@@ -133,7 +130,7 @@
             <label for="uname">Username</label>
             <input type="text" class="form-control" id="uname" placeholder="Enter your Name" name="uname">
             <small id="unamehelp" class="form-text text-muted px-1">
-              Your unique username must be less than 10 characters (only lowecase letters, numbers & underscores
+              Your unique username must be less than 10 characters (only lowecase letters, numbers &amp; underscores
               allowed) with no spaces
             </small>
           </div>
@@ -168,10 +165,9 @@
           </div>
           <div class="form-group">
             <label for="password2">Retype a password</label>
-            <input type="password" class="form-control" id="password2" placeholder="Retype your password"
-              name="password2">
+            <input type="password" class="form-control" id="password2" placeholder="Retype your password" name="password2">
           </div>
-          <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+          <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m&amp;co=aHR0cHM6Ly9kaWl2aWlqLmdpdGh1Yi5pbzo0NDM.&amp;hl=en&amp;v=TPiWapjoyMdQOtxLT9_b4n2W&amp;size=normal&amp;cb=xs7oq54lgs9h" role="presentation" name="a-jcbh3due9y68" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
           <input type="hidden" name="path" value="/">
           <button type="submit" class="btn btn-danger mt-2">SignUp</button>
         </form>
@@ -188,9 +184,9 @@
 <section class="jumbotron text-center">
     <div class="container">
         <img src="/static/home/img/photo.png" alt="logo" width="120">
-        <h1 class="jumbotron-heading"><span id="typed"></span></h1>
+        <h1 class="jumbotron-heading"><span id="typed">Want To Sell?</span><span class="typed-cursor">|</span></h1>
         <p class="lead text-muted"><br>We Update Website on the daily basis This is testig mode created by Divij !!
-        <p>
+        </p><p>
           <a href="/blog" class="btn btn-danger my-2">Want to Sell</a>
               <a href="/videos" class="btn btn-success my-2">Want to Buy</a>
             <a href="/contact" class="btn btn-primary my-2">Contact Me</a>
@@ -204,7 +200,15 @@
             <img src="hello.png" class="padded card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title text-center">Free</h5>
-                <p class="card-text text-center"> Advertisment!! You Can place your advertisnmet here onlione for free No charges get ccostumrese according to your area prefrence </p>
+                <p class="card-text text-center"> Advertisment!! You Can place your advertisnmet here online for free No charges get ccostumrese according to your area prefrence. 
+  What is Localhevocal ?
+  There the Buyer send a post of the product that they want to purchase. The sellers in the particular loaction of the buyer get the notification of the  post and can directly talk about the product to the buyer.This makes the buyer to give more attention   towards there Local Market/Area market. 
+
+
+
+
+
+</p>
                 <a href="post.html" class="btn btn-primary d-block">Post </a>
             </div>
         </div>
@@ -235,7 +239,7 @@
 
   <!-- FOOTER -->
   <footer class="container-fluid bg-dark my-0 py-3 text-light">
-    <p class="mb-0 text-center">&copy; 2020-2021 AIT</p>
+    <p class="mb-0 text-center">© 2020-2021 AIT</p>
     <p class="mb-0 text-center">
       <a href="#">Back to top |</a>
       <a href="#">Privacy |</a>
@@ -244,23 +248,17 @@
 
   </footer>
   <!-- Custom JavaScript -->
-  <script src="https://apis.google.com/js/platform.js" defer></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/TPiWapjoyMdQOtxLT9_b4n2W/recaptcha__en.js"></script><script src="https://apis.google.com/js/platform.js" defer="" gapi_processed="true"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous" defer=""></script>
   
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async="" defer=""></script>
 <script>
     window.onload = function () {
         console.log("loaded")
@@ -276,6 +274,24 @@
     };
 </script>
 
-</body>
 
-</html>
+
+
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style></body>
